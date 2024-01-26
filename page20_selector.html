@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page20_selector</title>
+    <style type="text/css">
+        /* 1.태그 선택자 */
+        div, p{
+            color:darkmagenta;
+            font-size: 1.2em;
+
+        }
+        /* 2. 클래스 선택자: 앞에 마침표(.)을 붙이고 클래스명을 기술 */
+        .c1{
+            color:blue;
+            background-color: orange;
+            padding:1em;
+        }
+        /* 3. 아이디 선택자: 앞에 #을 붙이고 아이디명을 기술 */
+        /* id가 dv2인 요소 선택해서
+           테두리를 두께 5px dotted 색상 알아서
+           안쪽 여백 0.5em
+           바깥 여백 0.8em
+        */
+        #d2, #p1{
+            background-color: aqua;
+            border: 5px dotted magenta;
+            padding: 0.5em;/*안쪽여백*/
+            margin: 0.8em; /*바깥여백*/
+
+        }
+        /* 선택자 우선순위 
+        아이디 선택자 > 클래스 선택자 > 태그 선택자 
+        */
+        .c2{
+            background-color: bisque;
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>기본 선택자 (태그선택자, 클래스 선택자, 아이디 선택자)</h1>
+    <div id="d1">div#d1</div>
+    <div id="d2">div#d2</div>
+    <div class="c1">div#d1</div>
+
+    <p class="c1">p.c1</p>
+    <p id="p1" class="c2">p#p1.c2</p>
+    <!--
+        id: 한페이지 내에서 unique한 값을 가져야 함
+    -->
+</body>
+</html>
+<!-- page20_selector.html-->

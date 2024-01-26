@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>page04_link.html </title>
+
+    </head>
+    <body>
+        <h1>링키 -a 태그 </h1>
+        <!-- block 요소-->
+        <a href="http://www.naver.com">네이버</a><br>
+        <a href="http://www.google.com" target="_blank">구글</a>
+        <a href="http://www.daum.net" title="다음으로 이동">다음</a>
+        <!-- inline 요소-->
+        <hr color="red">
+       
+        <a href="page01.html">내부 문서 - page01.html</a><br>
+        <a href="./page02_text.html" target="_blank">내부문서 - page02_text.html</a><br>
+       <!-- 상대경로: 실행중인 파일을 기준으로한 경로
+        . : 현재 디렉토리
+        .. : 상위 디렉토리
+        ../../a.html : 상위의 상위 디렉토리
+        -->
+        <a href="/page03_list.html">내부문서 - page03_list.html</a><br>
+        <!-- 절대경로 :서버의 루트 디렉토리에서부터 시작해서 
+        대상 파일의 경로를 전체적으로 지정하는 방식 -->
+        <a href="http://localhost:5500/test.html">내부문서 -test.html</a>
+
+        <br>
+
+        <a href="sample/sub.html">sample안의 sub.html로 이동[상대경로]</a><br>
+        <a href="/sample/sub.html">sample안의 sub.html로 이동[절대경로]</a>
+
+        <hr color="blue">
+        <a id="chap02"><h2>Chapter02</h2></a>
+        <p>어쩌구 저쩌구 [<a href="#chap03">3장으로 이동</a>]<br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </p>
+        <hr>
+        <a id="chap03"><h2>Chapter03</h2></a>
+        <p>어쩌구 저쩌구 [<a href="#chap02">2장으로 이동</a>| <a href="#">TOP으로 이동</a>]<br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+/* out.css */
+@charset "UTF-8";
+body{
+        color:#00aa00;
+        font-size: 1.5em;
+        /* em: 상대적 단위
+        글자 기본크기:16px 
+        16px의 15.배 크기
+         */
+
+}
+/* 
+div선택해서
+서체: san-serif
+글자색:알아서
+배경색:알아서
+ */
+ div{
+    font-family: sans-serif;
+    color:violet;
+    
+ }

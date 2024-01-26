@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page29_listStyle.html</title>
+    <style>
+        .lst1{
+            list-style: none;
+            list-style-type: circle;
+            list-style-image: url("images/aa.png");
+            /* disc,suqre,circle */
+        }Z
+        .lst1 li{
+            /* border: 1px solid blue; */
+            list-style-position: inside;
+
+        }
+        .lst2{
+            list-style: lower-alpha inside;
+        }
+        .menu{
+            list-style-type: none;
+        }
+        .menu>li{
+            background-color: lightblue;
+            width: 120px;
+            height: 25px;
+            padding: 1em;
+            display: inline-block;
+            border-radius: 20px;
+            text-align: center;
+            font-weight:bold;
+        }
+        .menu>li:nth-child(2n+1){
+            background-color: yellow;
+        }
+        .menu>li:nth-child(2n){
+            background-color: green;
+        }
+        a:link{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>목록 스타일</h1>
+    <ul class="lst1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQUERY</li>
+    </ul>
+<hr>
+<ol class="lst2">
+    <li>Oracle</li>
+    <li>MySQL</li>
+    <li>MongoDB</li>
+</ol>
+    <hr>
+    <ul class="menu">
+        <li><a href="page01.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">JQUERY</a></li>
+
+    </ul>
+    <hr color="red">
+</body>
+</html>
+<!--page29_listStyle.html-->

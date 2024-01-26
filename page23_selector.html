@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tile>page23_selector.html</title>
+        <style>
+            input[type="text"]{
+                background-color: red;
+                color:wheat;
+                font-size: 30px;
+
+            }
+/* input요소 중 name이 userpw인 요소를 선택해서 배경색,글자색,글자크기를 지정하세요 */
+       input[name="userpw"]{
+        background-color: blue;
+        color:aliceblue;
+        font-size: 40px;
+       }
+/*[1] img요소 중 확장자가 png인 이미지를 선택해서
+    border: 10px dashed 색상
+    
+  [2] gif 끝나는 이미지 선택
+  border:20px dotted 색상
+  
+  [3] jpg
+  border: 30px double 색상
+*/
+img[src$=".png"]{
+    border: 10px dashed fuchsia;
+}
+img[src$="gif"]{
+    border: 30px dotted saddlebrown;
+}
+img[src$="jpg"]{
+    border: 30px double gold;
+}
+/* a태그 중 href가 http로 시작하는 요소를 찾아서 글자크기 2em으로 주세요 */
+a[href^="http"]{
+    font-size: 2em;
+}
+/* a태그 의 title속성 값에 good을 포함하는 요소들을 찾아서 글자색을 달아주세요 */
+a[title="good"]{
+    color:teal;
+}
+        </style>
+
+</head>
+<body>
+    
+    <h1>속성 선택자</h1>
+
+    <input type="text" name="userid" placeholder="ID">
+    <input type="password" name="userpw" placeholder="Password">
+    <br><br>
+    <!-- png, gif, jpeg -->
+    <img src="images/a.png" >
+    <img src="images/dog.gif">
+    <img src="images/fish.jpg">
+    <hr>
+    <a href="http://www.naver.com" title="naver is good">네이버</a>
+    <a href="page01.html" title="page01 is good">page01</a>
+
+</body>
+</html>
+<!-- page23_selector.html-->

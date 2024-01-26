@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page13_input</title>
+</head>
+<body>
+    <h1>다양한 입력 양식</h1>
+    <form action="frm" id="frm" action="signup.jsp"  
+    method="get">
+    <!-- method="post" enctype="multipart/form-data" -->
+        이름:
+         <input type="text" name="name" placeholder="Name" size="60"><br>
+          <br>
+          사진:
+          <input type="file" name="photo">
+          <!--파일을 업로드하려면 form태그의 method는 post로 지정하고,
+        enctype="multipart/form-data"로 지정해야 한다.-->
+        <br><br>
+        성별:   
+        <input type="radio" name="gender" value="M">남자
+        <input type="radio" name="gender" value="M" checked>여자
+        <!-- radio버튼=>단일선택 (동일한 name일때 단일선택 가능)
+            checkbox버튼=>다중선택
+         -->
+        <br><br>
+        취미:
+        <input type="checkbox" name="hobby" id="hobby1" 
+        value="reading" checked>독서
+
+        <input type="checkbox" name="hobby" id="hobby2" value="music">음악감상
+        <input type="checkbox" name="hobby" id="hobby3" value="movie">영화감상
+        <br><br>
+        드롭다운리스트:
+        <select name="job"> <!--단일 선택-->
+            <option value="">::직업을 선택하세요::</option>
+            <option value="Backend">백엔드 개발자</option>
+            <option value="Frontend">프론트엔드 개발자</option>
+            <option value="Engineer">시스템 엔지니어</option>
+
+        </select>
+        <br><br>
+        다중선택리스트: <!-- 다중선택하려면 multiple속성을 준다 -->
+        <select name="lang" id="lang" multiple size="6">
+            <option value="">::사용가능한 언어::</option>
+            <option value="HTML">HTML</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="C">C</option>
+        </select>
+<br><br>
+        자기소개:
+        <textarea name="intro" placeholder="자기소개를 100자이내로"
+        rows="7" cols="40">
+            
+        </textarea>
+        <br><br>
+        히든필드:
+        <input type="hidden" name="secret" value="TopSecret">
+        <br><br>
+        <button>회원가입</button>
+        <!--input type="submit 과 동일한 버튼"-->
+        <button type="reset">다시쓰기</button>
+        <!--input type="reset"과 동일한 버튼-->
+        <button type="button">일반버튼</button>
+        
+    </form>
+
+</body>
+</html>

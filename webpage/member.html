@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('/css/member.css');
+    
+
+    </style>
+</head>
+
+<body>
+    <form action="frm" id="frm" action="signup.jsp"  
+    method="get">
+    <table>
+    <tr>   
+    <h1 >☛ 아이디(ID)정보</h1>
+    
+    <td class="important">*아이디 </td>
+    
+   <td> <input type="text"><button>중복검사</button>
+    <p><span>(4~12자 영자/숫자 가능. 한글, 특수문자 ID는 사용할 수 없습니다.)</span></p>
+</td>
+   
+</tr>
+
+    <tr>
+    <td class="important">*비밀번호</td>
+    <td><input type="password">
+    <d><sapn>(4~8자 이내로 만들어주세요)<span></d>
+    </td>
+</tr>
+
+
+<tr>
+    <td class="important">*비밀번호 확인</td>
+    <td><input type="password">
+    <d><sapn>(위 비밀번호와 같이 입력해주세요)<span></d>
+    </td>
+</tr>
+</table>
+<table>
+    <h1>☛ 개인정보</h1>
+    <tr>
+    <td class="important">*이름(한글)</td>
+    <td><input type="text">
+    <span>(예: 박정현)</span>
+</td>
+</tr>
+<tr>
+
+    <td class="important">생년월일</td>
+    <td><input type="date"><input type="checkbox"></td>
+</tr>
+  
+   <tr>
+    <td class="important">*주소</td>
+    <td><input type="address"><button>우편번호 찾기</button>
+    <p><span><input type="text"></span></p></td>
+
+</tr>
+<tr>
+   
+    <td class="important">*전화번호</td>
+
+        <td><a class="handp">핸드폰<input type="text"></a>
+            <input  id="fone"type="radio"   name="phone" value="M">SKT
+            <input type="radio" name="phone" value="M" >KT
+            <input type="radio" name="phone" value="M" >LG</td>
+        
+        
+       
+</tr>    
+<tr>
+        <td class="important">이메일</td>
+   
+        <td><input type="email" name="email" id="myemail" multiple size="60">
+        </td>
+    </tr> 
+
+    <tr>
+        <td class="important">가입인사</td>
+          <td>  <textarea rows="7" cols="40"></textarea></td>
+        
+
+            
+           
+</tr>    
+<tr>
+
+     <div ><td></td>
+        <td> <button class="last">확인</button>
+          <button type="reset"class="last">다시입력</button></td>
+        
+        </div>
+    
+</tr>
+</form>
+    </table> 
+    <!--회원 가입 양식을 작성하되
+    css 파일을 외부파일로 작성하세요
+    css/member.css-->
+</body>
+</html>

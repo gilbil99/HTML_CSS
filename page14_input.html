@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page14_input.html</title>
+</head>
+<body>
+    <h1>HTML5에 추가된 입력 양식</h1>
+    <form action="join.jsp">
+        <fieldset>
+            <legend>::회원 가입::</legend>
+            <label for="">이메일</label>
+            <input type="email" name="email" id="myemail" multiple size="60">
+            <!--이메일형식이 아니면 에러 출력 -->
+            <br><br>
+            <label for="homepage">홈페이지</label>
+            <input type="url" name="homepage" id="homepage" size="60">
+            <!--url형식이 아니면 에러 출력-->
+            <br><br>
+            <input type="date" name="birth" id="birth"
+            min="2024-01-01" max="2024-03-31"><br><br>
+            <input type="time" name="birthtime" id="birthtime">
+            <br><br>
+            <input type="number" name="age" id="age"
+            min="1" max="130" step="5">
+            <br><br>
+            <!-- 0~255
+            16진수: 0~15, 0~9,a,b,c,d,e,f
+            rgb
+            -->
+            <input type="color" name="cr" id="cr" value="#00aa00">
+            <br><br>
+            <input type="range" name="rgb" id="rgb"
+            min="0" max="255" value="50">
+            <br><br>
+            <button>회원가입</button>
+        </fieldset>
+    </form>
+</body>
+</html>

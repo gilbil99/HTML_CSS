@@ -1,0 +1,26 @@
+/*member.css*/
+@charset "UTF-8";
+
+h1,h2{
+    background-color: aqua;
+    
+}
+
+span,d{
+    color: blue;
+}
+td.important{
+    background-color: beige;
+    width: 200px;
+    text-align: right;
+}
+.last{
+    width:100px;
+margin:auto;
+display:inline-block;
+   
+}
+
+.handp{
+color:purple;
+}

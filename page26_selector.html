@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page26_selector</title>
+    <style>
+        div>p:nth-child(1){
+            background-color: tomato;
+        }
+        P:nth-child(2){
+            background-color: lightcoral;
+            font-size: 22pt;
+
+
+        }
+        p:nth-child(3){
+            background-color: chartreuse;
+            font-size: 250%;
+        }
+        p:nth-child(4){
+            background-color: royalblue;
+            color: red;
+            font-size: 150%;
+        }
+        /* 짝수번쨰에 있는 p만 선택해서 테두리를 주세요*/
+        p:nth-child(2n){
+            border: thick dashed lightblue;
+
+        }
+        p:nth-child(2n+1){
+            border: thick dotted orangered;
+        }
+    </style>
+</head>
+<body>
+    <h1>nth-child()활용 -자식을 선택할 때 사용</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    </div>
+</body>
+</html>

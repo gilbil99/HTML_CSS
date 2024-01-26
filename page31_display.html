@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 1em;
+            background-color: violet;
+        }
+        #dv1:hover{
+            background-color: chartreuse;
+            display: none; /*block*/
+            /* 영역이 사라짐 */
+
+
+        }
+        #dv2:hover{
+            background-color: yellow;
+            visibility: hidden; /*visible*/
+            /* 영역은 차지하지만 보이지 않음 */
+
+        }
+        #dv3:hover{
+            background-color: yellow;
+            opacity: 0;
+            /* 영역은 차지하지만 투명함 */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>display, visibility, opacity</h1>    
+    <div id="dv1">
+        #dv1
+    </div>
+    <div id="dv2">
+        #dv2
+    </div>
+    <div id="dv3">
+        #dv3
+    </div>
+</body>
+</html>
+<!--page31_display.html-->
